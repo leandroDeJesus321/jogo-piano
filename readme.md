@@ -1,5 +1,7 @@
 # Piano virtual - Bootcamp desenvolvimento jogos
 
+<<<<<<< HEAD
+
 <p>
 	Piano virtual desenvolvido como o 3º desáfio do bootcamp da DIO sobre desenvolvimento de 		jogos.
 </p>
@@ -15,5 +17,5 @@ O teclado contém as seguintes funcionalidades:
 </ul>
 
 <p>
-	Novas atualizações serão incrementadas conforme consiguir e irei manter disponibilizado para qualquer uso caso estejam interessados.
+	O piano virtual será atualizado conforme necessário e estarei disponibilizando para qualquer uso este projeto.
 </p>
