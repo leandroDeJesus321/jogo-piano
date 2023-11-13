@@ -1,0 +1,160 @@
+
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+    color: #ffffff;
+
+}
+
+.container{
+    width: 49rem;
+
+    border-radius: 1.25rem;
+    padding: 2rem 2.5rem;
+
+    background-color: rgb(27, 27, 27);
+
+}
+
+.container header{
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header h2{
+    font-size: 1.5rem;
+    
+}
+
+header .column{
+    display: flex;
+    align-items: center;
+
+}
+
+header .column span{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+
+}
+
+.volume-slider input{
+    accent-color: #fff;
+    
+}
+
+.keys-check input{
+    width: 3.75rem;
+    height: 30px;
+
+    appearance: none;
+    background-color: #4b4b4b;
+    border-radius: 30px;
+
+    cursor: pointer;
+    position: relative;
+
+}
+
+.keys-check input::before{
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+
+    top: 50%;
+    left: 0.3rem;
+    
+    border-radius: inherit;
+    background-color: #8c8c8c;
+    
+    position: absolute;
+    
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    
+}
+
+.keys-check input:checked::before{
+    left: 2.1rem;
+    background-color: #ffffff;
+    
+}
+
+.piano-keys{
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 2.5rem;
+
+}
+
+.piano-keys .key{
+    cursor: pointer;
+    user-select: none;/* Impede o usuário de criar um efeito de seleção nas teclas.*/
+    list-style: none;
+    color: #a2a2a2;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+/* Teclas brancas do teclado. */
+.piano-keys .white{
+    width: 4.375rem;
+    height: 14.375rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background: linear-gradient(#ffffff 96%,#eee 4%);
+    color: black;
+
+}
+
+/* Ao clicar em cima da tecla branca do teclado. */
+.piano-keys .white:active{
+    box-shadow: inset -.25rem .25rem 1.25rem rgba(0,0,0, 0.2);
+    background: linear-gradient(#fff 0, #eee 100%);
+
+}
+
+/* Teclas escuras do teclado. */
+.piano-keys .black{
+    width: 2.75rem;
+    height: 8.75rem;
+    z-index: 2;    
+    margin: 0 -22px 0 -22px;
+    border: 1px solid black;
+    border-radius: 0 0 0.25rem 0.25rem;
+    background: linear-gradient(#333,#000);
+    color: white;
+
+}
+
+/* Ao clicar em cima da tecla branca do teclado. */
+.piano-keys .black:active{
+    box-shadow: inset -.25rem .25rem 1.25   rem rgba(255,255,255, 0.1);
+    background: linear-gradient(#000, #434343 );
+
+}
+
+/* Trabalhando na tag span do teclado */
+.piano-keys span{
+    position: absolute;
+    bottom: 1.25rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem;
+    
+}
+
+.piano-keys .key.hide span{
+    display: none;
+}
