@@ -1,8 +1,8 @@
-<h1> Piano virtual - Bootcamp desenvolvimento jogos
+# Piano virtual - Bootcamp desenvolvimento jogos
 
-<p> piano virtual desenvolvido como o 3º desáfio do bootcamp da DIO sobre desenvolvimento de jogos.
+Piano virtual desenvolvido como o 3º desáfio do bootcamp da DIO sobre desenvolvimento de jogos.
 
-<p> O teclado contém as seguintes funcionalidades:
+O teclado contém as seguintes funcionalidades:
 
 <ul>
 <li> Tecla que correspondentes podem ser vistas no teclado.
